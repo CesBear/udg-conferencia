@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Registro - Futuro Europa-México 2024</title>
+</head>
+
+<body>
+    <!-- Encabezado con Navegación -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="programa.html">Programa de Actividades</a></li>
+            <li><a href="ponentes.html"> Ponentes y Talleristas</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Registro para Futuro Europa-México 2024</h1>
+    </header>
+
+    <section class="registration-form">
+        <h2>Formulario de Registro</h2>
+        <!-- Formulario para registrarse -->
+        <form onsubmit="openModal(); return false;"> <!-- Llama a la función y evita el envío inmediato -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="organization">Organización:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="position">Posición:</label>
+            <input type="text" id="position" name="position" required>
+
+            <button type="submit" class="button">Registrarse</button>
+        </form>
+    </section>
+
+    <!-- Modal para mostrar confirmación de registro -->
+    <div id="confirmation-modal" class="modal" style="display: none;"> <!-- Oculto por defecto -->
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span> <!-- Botón para cerrar -->
+            <h2>¡Registro Exitoso!</h2>
+            <p>Gracias por registrarte en Futuro Europa-México 2024. Esperamos verte en el evento.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Intercambio Tecnológico Europa-México 2024<br>
+            Organizado por Henri Guillart en colaboración con la Cámara de Comercio de Guadalajara</p>
+    </footer>
+
+    <!-- Script para controlar el modal -->
+    <script>
+        function openModal() { /* Abre el modal */
+            document.getElementById("confirmation-modal").style.display = "flex"; /* Muestra el modal */
+        }
+
+        function closeModal() { /* Cierra el modal */
+            document.getElementById("confirmation-modal").style.display = "none"; /* Oculta el modal */
+        }
+    </script>
+</body>
+
+</html>

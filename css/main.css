@@ -1,0 +1,423 @@
+:root {
+    --navy-blue: #2a455f;
+    --bright-turquoise: #79798f;
+    --bright-dorado: #afaa60;
+    --bright-magenta: #806d8a;
+    --light-turquoise: #16a085;
+    --pure-white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* Elimina el margen predeterminado */
+    background-color: var(--navy-blue);
+    /* Fondo principal del cuerpo */
+    color: var(--pure-white);
+    /* Color de texto por defecto */
+}
+
+/* Estilo del menú */
+.menu {
+    list-style: none;
+    /* Elimina los marcadores de lista */
+    margin: 0;
+    padding: 0;
+    background-color: var(--bright-turquoise);
+    text-align: center;
+    /* Centra los elementos del menú */
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--pure-white);
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: var(--light-turquoise);
+    border-radius: 5px;
+}
+
+/* Estilo de la introducción */
+.introduction {
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--bright-magenta);
+    /* Fondo para la sección de introducción */
+    color: var(--pure-white);
+    /* Color de texto para la introducción */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    text-align: center;
+}
+
+/* Botones */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: var(--bright-dorado);
+    color: var(--navy-blue);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--light-turquoise);
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer {
+    background-color: var(--navy-blue);
+    color: var(--pure-white);
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.footer a {
+    color: var(--pure-white);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    background-color: var(--navy-blue);
+    color: var(--pure-white);
+    padding: 20px 0;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.sponsors {
+    text-align: center;
+    background-color: var(--navy-blue);
+    color: var(--pure-white);
+    padding: 20px 0;
+}
+
+#companies-projects ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#companies-projects ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#companies-projects ul a {
+    background: transparent center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 108px;
+    height: 65px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#companies-projects ul li:last-child {
+    margin-right: 0;
+}
+
+#companies-projects ul a.google {
+    background-image: url(/assets/images/sponsors/google.png);
+}
+
+#companies-projects ul a.linux {
+    background-image: url(/assets/images/sponsors/linux.png);
+}
+
+#companies-projects ul a.linked-in {
+    background-image: url(/assets/images/sponsors/linkedin.png);
+}
+
+#companies-projects ul a.netflix {
+    background-image: url(/assets/images/sponsors/netflix.png);
+}
+
+.conference {
+    background-color: var(--bright-magenta);
+    color: var(--pure-white);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar la tarjeta */
+}
+
+.conference h3 {
+    color: var(--bright-dorado);
+}
+
+.conference p {
+    margin: 5px 0;
+}
+
+/* Estilos para la cuadrícula de conferencias */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.conference {
+    background-color: var(--bright-magenta);
+    color: var(--pure-white);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.conference img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--navy-blue);
+    color: var(--pure-white);
+} */
+
+/* Estilo de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.conference, .taller {
+    background-color: var(--bright-magenta);
+    color: var(--pure-white);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center;
+}
+
+.conference img, .taller img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo para encabezados */
+header {
+    text-align: center;
+    background-color: var(--navy-blue);
+    color: var(--pure-white);
+    padding: 20px 0;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Estilo para secciones */
+.introduction {
+    background-color: var(--bright-magenta);
+    color: var(--pure-white);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo de los botones */
+.button {
+    background-color: var(--bright-dorado);
+    color: var(--navy-blue);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--light-turquoise);
+}
+
+/* Estilo para el pie de página */
+.footer {
+    text-align: center;
+    background-color: var(--navy-blue);
+    color: var(--pure-white);
+    padding: 20px;
+}
+
+
+.back-home {
+    text-align: center; /* Centra el botón */
+    margin: 20px 0; /* Añade margen para separación */
+}
+
+.button {
+    background-color: var(--bright-dorado); /* Color de fondo */
+    color: var(--navy-blue); /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quita el subrayado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.button:hover {
+    background-color: var(--light-turquoise); /* Efecto hover */
+}
+
+
+/* efecto de las boxes par aefecto 3D*/
+.conference, .taller {
+    background-color: var(--bright-magenta);
+    color: var(--pure-white);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera por defecto */
+    text-align: center;
+    transition: box-shadow 0.3s; /* Transición suave para el efecto de hover */
+}
+
+.conference:hover, .taller:hover {
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3); /* Sombra más grande para el efecto 3D */
+}
+
+
+
+/** Ponentes CSS **/
+.ponente {
+    text-align: center;
+    background-color: var(--bright-magenta);
+    color: var(--pure-white);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s;
+}
+
+.ponente:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.circular {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    border: 2px solid var(--bright-dorado); 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+/** Registro CSS **/
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el efecto de superposición */
+    display: flex; /* Configura el contenedor como flex */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    z-index: 1000; /* Para asegurar que esté por encima de otros elementos */
+}
+
+.modal-content {
+    background: var(--bright-magenta); /* Color del modal */
+    color: var(--pure-white); /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    max-width: 400px; /* Ancho máximo */
+}
+
+.close-button {
+    float: right; /* Alinea el botón de cierre a la derecha */
+    font-size: 24px; /* Tamaño del botón de cierre */
+    cursor: pointer; /* Muestra el cursor de mano */
+}
+
+.registration-form {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario */
+    background-color: var(--bright-magenta); /* Color de fondo */
+    color: var(--pure-white); /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column; /* Cada campo en un renglón diferente */
+}
+
+.registration-form label {
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+}
+
+.registration-form input {
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio entre campos */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.registration-form button {
+    background-color: var(--bright-dorado); /* Color del botón */
+    color: var(--navy-blue); /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.registration-form button:hover {
+    background-color: var(--light-turquoise); /* Color del botón en el hover */
+}

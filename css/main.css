@@ -10,22 +10,17 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    /* Elimina el margen predeterminado */
     background-color: var(--navy-blue);
-    /* Fondo principal del cuerpo */
     color: var(--pure-white);
-    /* Color de texto por defecto */
 }
 
 /* Estilo del menú */
 .menu {
     list-style: none;
-    /* Elimina los marcadores de lista */
     margin: 0;
     padding: 0;
     background-color: var(--bright-turquoise);
     text-align: center;
-    /* Centra los elementos del menú */
 }
 
 .menu li {
@@ -50,11 +45,8 @@ body {
     margin: 20px;
     padding: 10px;
     background-color: var(--bright-magenta);
-    /* Fondo para la sección de introducción */
     color: var(--pure-white);
-    /* Color de texto para la introducción */
     border-radius: 5px;
-    /* Bordes redondeados */
     text-align: center;
 }
 
@@ -170,7 +162,7 @@ header h2 {
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .conference h3 {
@@ -206,13 +198,6 @@ header h2 {
 }
 
 
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: var(--navy-blue);
-    color: var(--pure-white);
-} */
-
 /* Estilo de la cuadrícula */
 .grid-container {
     display: grid;
@@ -226,7 +211,7 @@ header h2 {
     color: var(--pure-white);
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -256,7 +241,7 @@ header h2 {
     color: var(--pure-white);
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo de los botones */
@@ -286,23 +271,23 @@ header h2 {
 
 
 .back-home {
-    text-align: center; /* Centra el botón */
-    margin: 20px 0; /* Añade margen para separación */
+    text-align: center;
+    margin: 20px 0;
 }
 
 .button {
-    background-color: var(--bright-dorado); /* Color de fondo */
-    color: var(--navy-blue); /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    text-decoration: none; /* Quita el subrayado */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 18px; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color: var(--bright-dorado);
+    color: var(--navy-blue);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: var(--light-turquoise); /* Efecto hover */
+    background-color: var(--light-turquoise);
 }
 
 
@@ -312,13 +297,13 @@ header h2 {
     color: var(--pure-white);
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera por defecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: box-shadow 0.3s; /* Transición suave para el efecto de hover */
+    transition: box-shadow 0.3s;
 }
 
 .conference:hover, .taller:hover {
-    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3); /* Sombra más grande para el efecto 3D */
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -335,13 +320,13 @@ header h2 {
 }
 
 .ponente:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .circular {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     border: 2px solid var(--bright-dorado); 
 }
 
@@ -355,69 +340,69 @@ header h2 {
 
 /** Registro CSS **/
 .modal {
-    display: none; /* Oculto por defecto */
-    position: fixed; /* Fijo en la pantalla */
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el efecto de superposición */
-    display: flex; /* Configura el contenedor como flex */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    z-index: 1000; /* Para asegurar que esté por encima de otros elementos */
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 .modal-content {
-    background: var(--bright-magenta); /* Color del modal */
-    color: var(--pure-white); /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto */
-    max-width: 400px; /* Ancho máximo */
+    background: var(--bright-magenta);
+    color: var(--pure-white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
 }
 
 .close-button {
-    float: right; /* Alinea el botón de cierre a la derecha */
-    font-size: 24px; /* Tamaño del botón de cierre */
-    cursor: pointer; /* Muestra el cursor de mano */
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .registration-form {
-    max-width: 600px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario */
-    background-color: var(--bright-magenta); /* Color de fondo */
-    color: var(--pure-white); /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 600px; 
+    margin: 0 auto;
+    background-color: var(--bright-magenta);
+    color: var(--pure-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .registration-form form {
     display: flex;
-    flex-direction: column; /* Cada campo en un renglón diferente */
+    flex-direction: column;
 }
 
 .registration-form label {
-    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+    margin-bottom: 5px;
 }
 
 .registration-form input {
-    padding: 10px; /* Espaciado interno */
-    border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes redondeados */
-    margin-bottom: 20px; /* Espacio entre campos */
-    font-size: 16px; /* Tamaño de la fuente */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .registration-form button {
-    background-color: var(--bright-dorado); /* Color del botón */
-    color: var(--navy-blue); /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color: var(--bright-dorado);
+    color: var(--navy-blue);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .registration-form button:hover {
-    background-color: var(--light-turquoise); /* Color del botón en el hover */
+    background-color: var(--light-turquoise);
 }
